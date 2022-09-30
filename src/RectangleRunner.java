@@ -1,11 +1,12 @@
-public class RectangleRunner
-{
-    public static void main(String[] args)
-    {
+public class RectangleRunner {
+    public static void main(String[] args) {
+
+        //Step 4
         Rectangle plot1 = new Rectangle(150, 200);
         Rectangle plot2 = new Rectangle(125);
         Rectangle plot3 = new Rectangle();
 
+        //Step 5
         System.out.println("Plot 1 length: " + plot1.getLength());
         System.out.println("Plot 1 width: " + plot1.getWidth());
         System.out.println("Plot 1 area: " + plot1.calculateArea());
@@ -20,11 +21,14 @@ public class RectangleRunner
         System.out.println("Plot 3 width: " + plot3.getWidth());
         System.out.println("Plot 3 area: " + plot3.calculateArea());
 
+        //Step 6
         plot1.setWidth(75);
         plot2.setWidth(75);
         plot2.setLength(75);
         plot3.setWidth(75);
 
+        //Step 9
         int totalArea = plot1.calculateArea() + plot2.calculateArea() + plot3.calculateArea();
+        System.out.println("These three plots requires " + totalArea + " sqaure feet of seed");
     }
 }
